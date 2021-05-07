@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:  Arial, Helvetica, sans-serif;
+            padding: 10px;
+            background: #f1f1f1;
+            color: black;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 10px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* Style the top navigation bar */
+        /* Note these are not utilised in the HTML... yet: .
+           They are provided as examples of hover elments
+           How could you use them? */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #e3f0ff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            width: 25%;
+
+        }
+
+        /* Change color on hover */
+        .topnav a:hover { 
+            background-color: rgb(73, 221, 67);
+            color: black;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 100%;
+        }
+
+        img.round {
+            border-radius: 100%;
+            width: 100%;
+        }
+
+        .leftbox {
+            position: absolute;
+            width: 572px;
+            height: 531px;
+            left: 26px;
+            top: 459px;
+            background: #FFD9D9;
+        }
+
+        .rightbox {
+            position: absolute;
+            width: 572px;
+            height: 531px;
+            left: 841px;
+            top: 459px;
+            background: #E6FCFF;
+        }
+
+        .roundpicture {
+            position: absolute;
+width: 124px;
+height: 126px;
+left: 48px;
+top: 160px;
+
+background: #f0f0f0;
+        }
+
+        .title {
+           
+position: absolute;
+width: 277px;
+height: 42px;
+left: 192px;
+top: 202px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+
+color: #000000; 
+        }
+
+        .textleftbox {
+            position: absolute;
+width: 555px;
+height: 94px;
+left: 35px;
+top: 896px;
+
+font-family: Times New Roman;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 18px;
+
+color: #7A7D6C;
+        }
+
+        .uppertext {
+            position: absolute;
+width: 1035px;
+height: 73px;
+left: 203px;
+top: 317px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+
+color: #000000;
+
+opacity: 0.5;
+
+        }
+
+        .lowertext {
+            position: absolute;
+width: 1012px;
+height: 19px;
+left: 203px;
+top: 390px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: #7A7D6C;
+        }
+
+        .oldversiontext{
+            position: absolute;
+width: 82px;
+height: 19px;
+left: 271px;
+top: 436px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: rgba(255, 4, 4, 0.48);
+        }
+
+        .newversiontext {
+
+            /* New version */
+
+
+position: absolute;
+width: 88px;
+height: 19px;
+left: 1103px;
+top: 436px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: #54E3E3;
+        }
+
+        .righttext{
+            position: absolute;
+width: 459px;
+height: 19px;
+left: 898px;
+top: 900px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: #000000;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="survey.html">Survey</a>
+        <a href="ideation.html">Ideation</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class= "title">
+        Gumtree Ideation
+    </div>
+
+    <div class= "roundpicture">      
+        <img src="https://static.gumtree.com.au/master-a5f7f6e0c3c73714ce96372920b6242c12a11a23/img/au/gumtree-australia-logo.png" class="round" alt="Gumtree image" style= "vertical-align: middle;">
+    </div>
+      
+        
+    
+      
+<div class = "uppertext"><p> 
+    My team which consists of: <i>Omar El-Eter, Timothy Betschel</i> and myself <i>Joseph Elie Moussi</i>, chose the website <b>Gumtree</b> to review and after analysing the website we found some issues with the User Experience, which includes the left filter list which used to go away as we scroll thru the page and it gets replaced by an ad banner, which would get unconvenient for our personas using the website. 
+    
+   </p>
+</div>
+
+<div class= "lowertext">
+    <p>Down below I will post the old version of the GumTree website and after that I will post the newer version of the website with our possible fixes.</p>
+
+</div>
+
+<div class= "oldversiontext">
+    Old Version
+</div>
+
+<div class= "leftbox">
+    <img src="Pictures\oldUI.PNG" alt="Old Gumtree" width="100%" height="80%" position= "center">
+
+</div>
+
+<div class= "textleftbox">
+    We noticed some user issues in the website including the filter search at the left of the screen which changes into an ad banner after scrolling thru the page, so we added some features to make it better down in the picture below
+</div>
+
+<div class = "newversiontext">
+    New Version of the Website
+</div>
+
+<div class= "rightbox">
+    <img src="Pictures\newUI.PNG" alt="New GumTree" width="100%" height="80%">
+</div>
+
+<div class = "righttext">
+    Those are the changes that we want to implement to our website
+</div>
+
+</body>
+</html>
